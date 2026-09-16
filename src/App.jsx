@@ -44,14 +44,16 @@ function App() {
   return (
     <main className="page">
       <div className="content">
-        <div className="logo">
-          <img src="/logo.png" alt="Virtual Realty" className="logo-img" />
-          <span className="logo-name">Virtual <em>Realty</em></span>
-        </div>
+        <header>
+          <div className="logo">
+            <img src="/logo.png" alt="Virtual Realty logo" className="logo-img" />
+            <span className="logo-name">Virtual <em>Realty</em></span>
+          </div>
 
-        <div className="line"></div>
+          <div className="line"></div>
 
-        <p className="tag">REAL ESTATE CONSULTANCY</p>
+          <p className="tag">REAL ESTATE CONSULTANCY — KHARGHAR, NAVI MUMBAI</p>
+        </header>
 
         <h1>
           Something Great
@@ -60,42 +62,49 @@ function App() {
         </h1>
 
         <p className="text">
-          We are building a better real estate experience for you.
+          Your trusted property consultant in Kharghar, Navi Mumbai.
           <br />
-          Our website will be launching soon.
+          New launches, buy &amp; sell support — all at the best price.
+          <br />
+          <span className="under-dev">Our website is currently under development and launching soon.</span>
         </p>
 
-        <div className="countdown">
+        <div className="countdown" aria-label="Countdown to launch">
           <div className="box">
             <strong>{String(time.days).padStart(2, "0")}</strong>
             <span>Days</span>
           </div>
-
           <div className="box">
             <strong>{String(time.hours).padStart(2, "0")}</strong>
             <span>Hours</span>
           </div>
-
           <div className="box">
             <strong>{String(time.minutes).padStart(2, "0")}</strong>
             <span>Minutes</span>
           </div>
-
           <div className="box">
             <strong>{String(time.seconds).padStart(2, "0")}</strong>
             <span>Seconds</span>
           </div>
         </div>
 
-        <p className="release">
-         Stay tuned for our official launch
-        </p>
+        <p className="release">Stay tuned for our official launch</p>
 
-        <div className="bottom">
-          <span>Property</span>
-          <span>Consultancy</span>
-          <span>Expert Guidance</span>
-        </div>
+        <footer className="site-footer">
+          <div className="bottom">
+            <span>Property</span>
+            <span>Consultancy</span>
+            <span>Expert Guidance</span>
+          </div>
+
+          <address className="contact">
+            <a href="tel:+919167478723">+91 91674 78723</a>
+            <span className="contact-sep">·</span>
+            <a href="mailto:virtualrealty07@gmail.com">virtualrealty07@gmail.com</a>
+            <span className="contact-sep">·</span>
+            <span>Kharghar, Navi Mumbai</span>
+          </address>
+        </footer>
       </div>
     </main>
   );

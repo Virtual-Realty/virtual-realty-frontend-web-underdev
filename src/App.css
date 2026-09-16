@@ -152,6 +152,12 @@ h1 span {
 
 /* Bottom */
 
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .bottom {
   display: flex;
   justify-content: center;
@@ -162,6 +168,39 @@ h1 span {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.contact {
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: #68716c;
+  padding-bottom: 4px;
+}
+
+.contact a {
+  color: #9b7b45;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact-sep {
+  color: #c5c0b8;
+}
+
+.under-dev {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #9b7b45;
+  font-style: italic;
 }
 
 /* Mobile */
@@ -222,6 +261,11 @@ h1 span {
     gap: 15px;
     flex-wrap: wrap;
     font-size: 9px;
+  }
+
+  .contact {
+    font-size: 12px;
+    gap: 6px;
   }
 }
 
