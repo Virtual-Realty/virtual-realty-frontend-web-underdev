@@ -6,7 +6,7 @@ import "./App.css";
 // CHANGE RELEASE DATE HERE
 // Format: YYYY-MM-DDTHH:MM:SS
 // ===============================
-const RELEASE_DATE = "2026-10-10T00:00:00";
+const RELEASE_DATE = "2026-10-12T00:00:00";
 
 function App() {
   const [time, setTime] = useState(getTimeLeft());
